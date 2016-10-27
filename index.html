@@ -21,36 +21,43 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-
-        <div id="pagepiling">
-            <div class="section" id="section1">
-                <video autoplay muted id="myVideo">
-                    <source src="img/logo.mp4" type="video/mp4">
-                </video>
-                <!--<div id="logo-box">
-                    <div id="logo"></div>
-                    <h1>FreeClan</h1>
-                    <h2>Be the change you want to see in the world.</h2>
-                </div>-->
-
+        <div class="pt-perspective">
+            <div class="pt-page pt-page-current" id="loading">
+                <div id="wrap"></div>
             </div>
-            <div class="section" id="section2">
-                <div class="intro">
+            <div class="pt-page" id="main-page">
+                <div id="pagepiling">
+                    <div class="section" id="section1">
+                        <video preload="auto" muted id="myVideo">
+                            <source src="http://www.freeclan.net/img/logo.mp4" type="video/mp4">
+                        </video>
+                        <!--<div id="logo-box">
+                            <div id="logo"></div>
+                            <h1>FreeClan</h1>
+                            <h2>Be the change you want to see in the world.</h2>
+                        </div>-->
+
+                    </div>
+                    <div class="section" id="section2">
+                        <div class="intro">
                     <span id="left">
                         <a href="http://www.freeclan.net/tyrantax">TyrantaX</a>
                     </span>
                     <span id="right">
                         <a href="http://www.freeclan.net/fakecola">FakeCola</a>
                     </span>
+                        </div>
+                    </div>
                 </div>
+
+            </div>
             </div>
         </div>
 
-        </div>
 
-        <script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+
         <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/vendor/three.min.js"></script>
         <script src="js/vendor/jquery.pagepiling.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/vendor/vue.min.js"></script>

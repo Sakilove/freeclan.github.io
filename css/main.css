@@ -12,6 +12,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
 }
 
 /*
@@ -121,13 +122,19 @@ textarea {
 
 body{
     font-family: Lato,"Microsoft YaHei",sans-serif;
+    height: 100%;
+    background: #333;
 }
 /* Centered texts in each section
 	* --------------------------------------- */
 .section{
     text-align:center;
 }
-
+#loading{
+    background-size: cover;
+    background-color: #1ABC9C;
+    padding: 0 0 0 0;
+}
 
 /* Backgrounds will cover all the section
 * --------------------------------------- */
@@ -236,9 +243,83 @@ body{
 }
 
 
+.pt-perspective {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+}
 
+.pt-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.pt-page-current{
+    visibility: visible;
+    z-index: 1;
+}
+.pt-page-scaleDown {
+    -webkit-animation: scaleDown .7s ease both;
+    -moz-animation: scaleDown .7s ease both;
+    animation: scaleDown .7s ease both;
+}
+.pt-page-scaleUpDown {
+    -webkit-animation: scaleUpDown .5s ease both;
+    -moz-animation: scaleUpDown .5s ease both;
+    animation: scaleUpDown .5s ease both;
+}
+.pt-page-delay300 {
+    -webkit-animation-delay: .3s;
+    -moz-animation-delay: .3s;
+    animation-delay: .3s;
+}
+@-webkit-keyframes scaleDown {
+    to { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleDown {
+    to { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleDown {
+    to { opacity: 0; transform: scale(.8); }
+}
+@-webkit-keyframes scaleUpDown {
+    from { opacity: 0; -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes scaleUpDown {
+    from { opacity: 0; -moz-transform: scale(1.2); }
+}
+@keyframes scaleUpDown {
+    from { opacity: 0; transform: scale(1.2); }
+}
 
-
+#wrap {
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    overflow: hidden;}
+#wrap canvas {
+    position: absolute;
+    left: 50%; top: 50%;
+    width: 500px;
+    height: 500px;
+    margin: -250px 0 0 -250px;
+    }
 
 
 /* ==========================================================================
