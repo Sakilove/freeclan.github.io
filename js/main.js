@@ -8,6 +8,8 @@ var video;
 
 $(document).ready(function() {
     video = $('#myVideo')[0];
+    video.play();
+    video.pause();
     loadingCheck = setInterval(videoLoading,200);
     loadingAnimation();
 });
