@@ -405,11 +405,21 @@ body{
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
+/*mobile*/
+@media screen and (max-device-width: 600px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
-@media print,
+}
+
+    @media print,
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+
+        /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
