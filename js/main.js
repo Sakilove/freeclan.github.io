@@ -1,7 +1,7 @@
 var deleteLog = false;
 var isVideoLoaded = false;
 var loadingCheck;
-var loadingProgress;
+var loadingProgress = 0;
 var loadingAnimationComplete = false;
 var loadingAnimationSpeedUp = false;
 var video;
@@ -15,7 +15,7 @@ function videoLoading() {
 
     loadingProgress = video.buffered.end(0)/video.duration;
     console.log(loadingProgress);
-    if(loadingProgress > 0.5){
+    if(loadingProgress > 0.8){
         loadingAnimationSpeedUp = true;
     }
     if(loadingAnimationComplete && !isVideoLoaded){
@@ -39,11 +39,11 @@ function loadingEnd() {
     $("#main-page").addClass("pt-page-delay300");
     $("#loading").on(animEndEventName,function () {
         $("#loading").removeClass("pt-page-current");
-        
+
     });
-    
-    
-    
+
+
+
     $('#pagepiling').pagepiling({
         menu: '#menu',
         anchors: ['page1', 'page2'],
@@ -180,7 +180,7 @@ function loadingAnimation() {
     }
 
     function animate() {
-        mesh.rotation.x += rotatevalue + acceleration;
+        mesh.rotation.x += (rotatevalue + acceleration + (loadingProgress/0.8*0.103));
         render();
         requestAnimationFrame(animate);
     }
