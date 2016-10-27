@@ -8,8 +8,8 @@ var video;
 
 $(document).ready(function() {
     video = $('#myVideo')[0];
-    video.play();
-    video.pause();
+    video.play();  //fix ipad preload problem
+    video.pause(); //fix ipad preload problem
     loadingCheck = setInterval(videoLoading,200);
     loadingAnimation();
 });
