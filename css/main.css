@@ -160,7 +160,7 @@ body{
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
-    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-color: #12e8bc; /* in case the video doesn't fit the whole page*/
 
     background-position: center center;
     background-size: contain;
@@ -281,24 +281,6 @@ body{
 #right a:active{
     color: #a03fcc;
 }
-
-#myVideo{
-    position: absolute;
-    z-index: 4;
-    right: 0;
-    bottom: 0;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    background-color: black; /* in case the video doesn't fit the whole page*/
-
-    background-position: center center;
-    background-size: contain;
-    object-fit: cover; /*cover video background */
-}
-
 
 .pt-perspective {
     position: relative;
@@ -497,28 +479,13 @@ body{
         width: 100%;
         height: 100%;
         background-size: 100% 100%;
-        background-color: #ecf0f1; /* in case the video doesn't fit the whole page*/
+        background-color: #34495e; /* in case the video doesn't fit the whole page*/
 
         background-position: center center;
         background-size: contain;
         object-fit: contain; /*cover video background */
     }
-    #myVideo{
-        position: absolute;
-        z-index: 4;
-        right: 0;
-        bottom: 0;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 100%;
-        background-size: 100% 100%;
-        background-color: #ecf0f1; /* in case the video doesn't fit the whole page*/
 
-        background-position: center center;
-        background-size: contain;
-        object-fit: contain; /*cover video background */
-    }
 }
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
