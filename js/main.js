@@ -9,6 +9,10 @@ $(document).ready(function() {
             'bulletsColor': '#eef3f0',
             'position': 'left',
             'tooltips': ['Page 1', 'Page 2']
+        },
+        afterRender: function(){
+            //playing the video
+            $('video').get(0).play();
         }
     });
 });
