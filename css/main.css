@@ -401,7 +401,7 @@ body{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media (max-device-aspect-ratio:1467/964){
+@media (orientation: portrait ){
     #myVideo{
         position: absolute;
         z-index: 4;
