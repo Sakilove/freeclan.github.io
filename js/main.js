@@ -35,9 +35,9 @@ function loadingEnd() {
     };
     // animation end event name
     animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ];
-    $("#loading").addClass("pt-page-scaleDown");
+    $("#loading").addClass("pt-page-scaleDownUp");
     $("#main-page").addClass("pt-page-current");
-    $("#main-page").addClass("pt-page-scaleUpDown");
+    $("#main-page").addClass("pt-page-scaleUp");
     $("#main-page").addClass("pt-page-delay300");
     $("#loading").on(animEndEventName,function () {
         $("#loading").removeClass("pt-page-current");
