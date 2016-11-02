@@ -68,7 +68,8 @@ function loadingAnimation() {
         areawidth = window.innerWidth,
         areaheight = window.innerHeight,
 
-        canvassize = 500,
+        canvassize = areawidth*0.618,
+
 
         length = 30,
         radius = 5.6,
@@ -85,7 +86,6 @@ function loadingAnimation() {
         mesh, ringcover, ring,
 
         camera, scene, renderer;
-
 
     camera = new THREE.PerspectiveCamera(65, 1, 1, 10000);
     camera.position.z = 150;
@@ -145,10 +145,12 @@ function loadingAnimation() {
     });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(canvassize, canvassize);
+
     renderer.setClearColor(bgColorStr);
 
     $wrap.appendChild(renderer.domElement);
 
+    $("#wrap > canvas").css({"margin-top":-canvassize/2+"px","margin-left":-canvassize/2+"px"});
 
     animate();
 
