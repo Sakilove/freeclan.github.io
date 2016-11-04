@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Light'), local('Lato-Light'), url('http://www.freeclan.net/tyrantax/font/lato400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url('http://www.freeclan.net/tyrantax/font/lato900.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url('http://www.freeclan.net/tyrantax/font/lato400i.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url('http://www.freeclan.net/tyrantax/font/lato900i.woff') format('woff');
+}
+@font-face {
+  font-family: chaka;
+  src:url('chaka.eot');
+  src: url('http://www.freeclan.net/font/chaka.eot?#iefix') format('embedded-opentype'),
+  url('http://www.freeclan.net/font/chaka.woff2') format('woff2'),
+  url('http://www.freeclan.net/font/chaka.woff') format('woff'),
+  url('http://www.freeclan.net/font/chaka.ttf') format('truetype'),
+  url('http://www.freeclan.net/font/chaka.svg#chaka') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LHANDW';
+  src:url('http://www.freeclan.net/font/LHANDW.eot');
+  src: url('http://www.freeclan.net/font/LHANDW.eot?#iefix') format('embedded-opentype'),
+  url('http://www.freeclan.net/font/LHANDW.woff2') format('woff2'),
+  url('http://www.freeclan.net/font/LHANDW.woff') format('woff'),
+  url('http://www.freeclan.net/font/LHANDW.ttf') format('truetype'),
+  url('http://www.freeclan.net/font/LHANDW.svg#chaka') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gnyrwn971';
+  src:url('http://www.freeclan.net/font/gnyrwn971.eot');
+  src: url('http://www.freeclan.net/font/gnyrwn971.eot?#iefix') format('embedded-opentype'),
+  url('http://www.freeclan.net/font/gnyrwn971.woff2') format('woff2'),
+  url('http://www.freeclan.net/font/gnyrwn971.woff') format('woff'),
+  url('http://www.freeclan.net/font/gnyrwn971.ttf') format('truetype'),
+  url('http://www.freeclan.net/font/gnyrwn971.svg#chaka') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stay_Writer';
+  src:url('http://www.freeclan.net/font/Stay_Writer.eot');
+  src: url('http://www.freeclan.net/font/Stay_Writer.eot?#iefix') format('embedded-opentype'),
+  url('http://www.freeclan.net/font/Stay_Writer.woff2') format('woff2'),
+  url('http://www.freeclan.net/font/Stay_Writer.woff') format('woff'),
+  url('http://www.freeclan.net/font/Stay_Writer.ttf') format('truetype'),
+  url('http://www.freeclan.net/font/Stay_Writer.svg#chaka') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'minguo';
+  src:url('http://www.freeclan.net/font/minguo.eot');
+  src: url('http://www.freeclan.net/font/minguo.eot?#iefix') format('embedded-opentype'),
+  url('http://www.freeclan.net/font/minguo.woff2') format('woff2'),
+  url('http://www.freeclan.net/font/minguo.woff') format('woff'),
+  url('http://www.freeclan.net/font/minguo.ttf') format('truetype'),
+  url('http://www.freeclan.net/font/minguo.svg#chaka') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FZMing';
+  src:url('http://www.freeclan.net/font/FZMing.eot');
+  src: url('http://www.freeclan.net/font/FZMing.eot?#iefix') format('embedded-opentype'),
+  url('http://www.freeclan.net/font/FZMing.woff2') format('woff2'),
+  url('http://www.freeclan.net/font/FZMing.woff') format('woff'),
+  url('http://www.freeclan.net/font/FZMing.ttf') format('truetype'),
+  url('http://www.freeclan.net/font/FZMing.svg#chaka') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
